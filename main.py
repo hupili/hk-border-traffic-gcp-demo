@@ -68,9 +68,14 @@ def main(*args, **kwargs):
 
     today = datetime.datetime.now().date()
     print(today)
-
+    
     d1day = timedelta(days=1)
-    try_date = max_date + d1day
+    if max_date is None:
+        try_date = today - d1day
+    else:
+        try_date = max_date + d1day
+
+    #try_date = datetime.date(2021,4,1)
     if try_date < today:
         rows = get_one_day(try_date)
         re = client.insert_rows(
