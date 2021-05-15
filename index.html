@@ -1,0 +1,45 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<h1>HK border traffic data</h1>
+
+<style>
+.wrapper {
+	position: relative;
+	padding-bottom: 75%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+}
+iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
+
+<div class="wrapper">
+<iframe src="uB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div>Loading...</div>
+</div>
+
+<hr>
+
+<p><small>Data source: IMMD</small></p>
+<p><small>Contact: hktraffic [AT] hupili [DOT] net</small></p>
+<p><small>Mobile user: touch the dashboard to find next page arrow</small></p>
+<p><small>Note: beta test; be caucious of data delay</small></p>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37311363-10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-37311363-10');
+</script>
+
+</body>
