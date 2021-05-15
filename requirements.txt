@@ -2,4 +2,4 @@ requests
 lxml
 pandas
 google-cloud-bigquery
-pyarrow
+pyarrow==1.0.1
