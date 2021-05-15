@@ -1,0 +1,5 @@
+requests
+lxml
+pandas
+google-cloud-bigquery
+pyarrow
